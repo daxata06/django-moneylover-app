@@ -1,0 +1,25 @@
+{%extends './base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%block content%}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'register.css' %}">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-register">
+            <h1 class="nickname">Введите ваш никнейм</h1>
+            <input placeholder="Никнейм" type="text" class="input-nickname2" id="username" name="username">
+            <h1 class="password">Придумайте пароль</h1>
+            <input placeholder="Пароль" id="password" name="password" type="password" class="input-password2"><br><br>
+            <button class="button">Зарегистрироваться</button>
+        </div>
+    </form>
+    {%endblock%}
+</body>
+</html>

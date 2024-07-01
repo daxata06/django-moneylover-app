@@ -1,0 +1,107 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://th.bing.com/th/id/OIP.E9PmEKyO5c2HlDTZ3Z1EzAHaEK?rs=1&pid=ImgDetMain");
+}
+.header {
+    background: rgb(178, 85, 85);
+    width: 100%;
+    height: 73px;
+    list-style: none;
+    top: -10px;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 5px 40px 0px #fff;
+}
+
+.name {
+    padding: 5px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.a {
+    width: 98px;
+    height: 29px;
+    margin-top: 29px;
+    left: 1057px;
+    font-size: 20px;
+    color: rgb(212, 114, 114);
+}
+
+.r {
+    width: 152px;
+    height: 29px;
+    margin-top: 29px;
+    margin-left: 900px;
+    font-size: 20px;
+    color: rgb(212, 114, 114);
+}
+
+
+.text {
+    right: -10px;
+    position: relative;
+    top: 7px;
+    color: rgb(76, 4, 4);
+    text-shadow: 5px 5px 5px rgb(243, 92, 92);
+    font-size: 28px;
+}
+
+.text:hover{
+    color: rgb(0, 0, 0);
+}
+
+.main-text {
+    text-shadow: 5px 5px 5px rgb(114, 26, 26);
+    font-size: 50px;
+    margin-left: 10px;
+    color: rgb(255, 77, 77);
+}
+
+.news-paper {
+    margin-left: 50%;
+    margin-top: -200px;
+    position: relative;
+}
+
+.news {
+    width: 70%;
+    height: 112px;
+    border: 2px solid rgb(225, 101, 101);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.photo {
+    width: 100px;
+    height: 112px;
+    border: 2px solid rgb(225, 101, 101);
+    float: left;
+    margin-top: 0px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.pht {
+    border-radius: 20px;
+}
+
+
+
+.usl {
+    font-size: 25px;
+    color: rgb(223, 147, 147);
+}
+
+.ab {
+    color: rgb(63, 7, 7);
+}
+
+.head-text {
+    color: rgb(212, 114, 114);
+}
+
+.post-text {
+    color: rgb(255, 77, 77);
+}

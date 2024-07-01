@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    background:  url("https://th.bing.com/th/id/OIP.E9PmEKyO5c2HlDTZ3Z1EzAHaEK?rs=1&pid=ImgDetMain");
+
+}
+
+.main-form {
+    background: rgb(111, 19, 14);
+    width: 600px;
+    height: 330px;
+    position: absolute;
+    margin-left: 400px;
+    top: 230px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 7px rgb(178, 85, 85);
+
+}
+
+.main-text {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.from, .to {
+    width: 200px;
+    height: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.btn {
+    width: 100px;
+    height: 20px;
+    background: green;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: rgb(66, 169, 66);
+}
+
+.sum {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+    margin-left: 380px;
+    margin-top: -30px;
+    color: rgb(33, 4, 4);
+}
+
+.summ {
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+    margin-left: 10px;
+
+}
+
+

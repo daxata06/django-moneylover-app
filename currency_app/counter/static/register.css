@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background: url("https://th.bing.com/th/id/OIP.E9PmEKyO5c2HlDTZ3Z1EzAHaEK?rs=1&pid=ImgDetMain");
+}
+.form-register {
+    background: rgb(111, 19, 14);
+    width: 600px;
+    height: 330px;
+    position: absolute;
+    margin-left: 400px;
+    top: 230px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 7px rgb(178, 85, 85);
+}
+
+.button {
+    background: green;
+    border-radius: 25px;
+    margin-left: 170px;
+    width: 250px;
+    height: 28px;
+    margin-top: 20px;
+    border-color: rgb(84, 11, 11);
+    border-width: 2px;
+    box-shadow: 0px 4px 70px 0px white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+}
+
+.button:hover {
+    background-color: rgb(66, 169, 66);
+}
+
+
+.nickname, .password {
+    margin-left: 150px;
+}
+
+.input-nickname, .input-password, .input-nickname2, .input-password2 {
+    margin-left: 170px;
+    border-radius: 25px;
+    width: 250px;
+    height: 28px;
+}
+
+.nickname, .password, .nickname2, .password2 {
+    color: rgb(37, 16, 16) ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.error {
+    position: fixed;
+    margin-top: -10px;
+    color: red;
+    margin-left: 150px;
+}

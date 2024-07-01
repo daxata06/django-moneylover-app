@@ -1,0 +1,21 @@
+{%extends './base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    {% csrf_token %}
+    <title>{{post.pub_name}}</title>
+</head>
+<body>
+   {%block content%}
+    <link rel="stylesheet" type="text/css" href="{% static 'news.css' %}">
+    <div class="container">
+     <img class="pht" src="/photos/{{post.photo}}">
+     <h1>{{post.pub_name}}</h1>
+     <p>{{post.text}}</p>
+    </div>
+   {%endblock%}
+</body>
+</html>

@@ -1,0 +1,42 @@
+{%extends './base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ {%block content%}
+  {% load static %}
+  {% csrf_token %}
+  <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+  <h1 class="main-text">MoneyLover - <b class="ab">для любителей денег</b></h1>
+  <ul>
+     <li class="usl">Форум для обсуждения</li>
+     <li class="usl">Конкурсы и викторины</li>
+     <li class="usl">Счетчик курса валют</li>
+     <li class="usl">Новости из мира денег</li>
+  </ul><br><br><br>
+  <div class="links">
+     <a class="text" href="/counter"><b>Счётчик курса валют</b></a><br>
+     <a class="text" href="#"><b>Формум</b></a><br>
+     <a class="text" href="#"><b>Новости в денежной сфере</b></a>
+  </div>
+  <div class="news-paper">
+   {%for post in posts%}
+   <div class="news">
+      <div class="photo">
+         <img class="pht" src="photos\{{post.photo}}" style="width: 100px; height: 112px;">
+      </div>
+      <div class="tekst">
+        <h1><a class="head-text" href="/news/{{post.id}}">{{post.pub_name}}</a></h1>
+        <p class="post-text">{{post.text}}</p>
+      </div>
+   </div>
+   {%endfor%}
+  </div>
+ {%endblock content%}
+<body>
+    
+</body>
+</html>

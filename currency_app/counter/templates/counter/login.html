@@ -1,0 +1,32 @@
+{%extends './base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%block content%}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'register.css' %}">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-register">
+            <h1 class="nickname">Введите ваш никнейм</h1>
+            <input placeholder="Никнейм" type="text" class="input-nickname" id="username_" name="username_">
+            <h1 class="password">Введите ваш пароль</h1>
+            <input placeholder="Пароль" id="password_" name="password_" type="password" class="input-password"><br><br>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <p {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <button class="button">Войти</button>
+        </div>
+    </form>
+    {%endblock%}
+</body>
+</html>

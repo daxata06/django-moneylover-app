@@ -1,0 +1,44 @@
+{%extends './base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>Document</title>
+</head>
+<body>
+   {%block content%}
+    <link rel="stylesheet" type="text/css" href="{% static 'index_.css' %}">
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div class="main-form">
+        <p class="main-text">Конвертер валют</p>
+        <p>Выберите валюту с которой хотите конвертировать</p>
+        <select name="from_" id="from_" class="from">
+          <option >Выбрать...</option>
+          {% for curr in get_curr %}
+          <option value="{{curr}}"
+          {% if curr == current_curr %}selected="selected"{% endif %}>
+          {{curr}}
+          </option>
+         {% endfor %}
+        </select><br>
+        <p>Выберите валюту в которую хотите конвертировать</p>
+        <select name="to" id="to" class="to">
+          <option >Выбрать...</option>
+          {% for curr in get_curr %}
+          <option value="{{curr}}" 
+          {% if curr == current_curr %}selected="selected"{% endif %}>
+          {{curr}}
+          </option>
+         {% endfor %}
+        </select><br><br>
+        <input placeholder="Введите сумму" id="sum" name="sum" class="summ"><br><br>
+        <button class="btn">Рассчитать</button>
+        <p class="sum">{{value}} {{c_name}}</p>
+      </div>
+    </form>
+  {%endblock content%}
+</body>
+</html>
